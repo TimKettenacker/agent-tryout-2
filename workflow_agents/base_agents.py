@@ -335,7 +335,7 @@ class RoutingAgent():
         embedding = response.data[0].embedding
         return embedding
 
-    def route_agents(self, input_text):
+    def route(self, input_text):
     # TODO: 3 - Define a method to route user prompts to the appropriate agent
         # TODO: 4 - Compute the embedding of the user input prompt
         input_emb = self.get_embedding(input_text)
