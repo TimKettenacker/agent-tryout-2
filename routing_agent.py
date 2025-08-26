@@ -52,7 +52,7 @@ routing_agent = RoutingAgent(openai_api_key=openai_api_key, agents=agents)
 prompts = ["Tell me about the history of Rome, Texas", "Tell me about the history of Rome, Italy",
 "One story takes 2 days, and there are 20 stories"]
 
-[print(routing_agent.route_agents(prompt)) for prompt in prompts]
+[print(routing_agent.route(prompt)) for prompt in prompts]
 
 for prompt in prompts:
-    print(routing_agent.route_agents(prompt))
+    print(routing_agent.route(prompt))
