@@ -15,7 +15,7 @@ class DirectPromptAgent:
     def __init__(self, openai_api_key):
         # Initialize the agent
         load_dotenv()
-        self.openai_api_key = os.getenv('OPENAI_API_KEY')
+        self.openai_api_key = openai_api_key
         # TODO: 2 - Define an attribute named openai_api_key to store the OpenAI API key provided to this class.
 
     def respond(self, prompt):
