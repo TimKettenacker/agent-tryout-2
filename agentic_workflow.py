@@ -182,7 +182,7 @@ completed_steps = []
 #   3. Loop through the extracted workflow steps:
 for step in workflow_steps:
     #      a. For each step, use the 'routing_agent' to route the step to the appropriate support function.
-    result = routing_agent.route_agents(step)
+    result = routing_agent.route(step)
     #      b. Append the result to 'completed_steps'.
     completed_steps.append(result)
     #      c. Print information about the step being executed and its result.
